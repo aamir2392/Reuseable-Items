@@ -17,7 +17,7 @@ const ProductImgAndDescription: FC<ProductImgAndDescriptionProps> = ({
         <img src={src} alt={alt} className="h-8 w-8" />
       </div>
       <div className="flex items-center">
-        <div className="text-sm max-w-48 text-[#191919]">
+        <div className="text-sm w-full md:max-w-48 text-[#191919]">
           {productDescription}
         </div>
       </div>
