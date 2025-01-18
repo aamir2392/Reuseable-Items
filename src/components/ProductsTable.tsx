@@ -124,7 +124,11 @@ const ProductsTable: FC = () => {
                     <ProductTableCellValue
                       headingText="Impressions"
                       change={product.impressions.change}
-                      changeType={product.impressions.changeType}
+                      changeType={
+                        product.impressions.changeType as
+                          | "positive"
+                          | "negative"
+                      }
                       statistics={product.impressions.statistics}
                     />
                   </TableCell>
@@ -132,7 +136,9 @@ const ProductsTable: FC = () => {
                     <ProductTableCellValue
                       headingText="Clicks"
                       change={product.clicks.change}
-                      changeType={product.clicks.changeType}
+                      changeType={
+                        product.clicks.changeType as "positive" | "negative"
+                      }
                       statistics={product.clicks.statistics}
                     />
                   </TableCell>
@@ -140,7 +146,11 @@ const ProductsTable: FC = () => {
                     <ProductTableCellValue
                       headingText="Conversions"
                       change={product.conversions.change}
-                      changeType={product.conversions.changeType}
+                      changeType={
+                        product.conversions.changeType as
+                          | "positive"
+                          | "negative"
+                      }
                       statistics={product.conversions.statistics}
                     />
                   </TableCell>
@@ -148,7 +158,9 @@ const ProductsTable: FC = () => {
                     <ProductTableCellValue
                       headingText="Sales"
                       change={product.sales.change}
-                      changeType={product.sales.changeType}
+                      changeType={
+                        product.sales.changeType as "positive" | "negative"
+                      }
                       statistics={product.sales.statistics}
                     />
                   </TableCell>
